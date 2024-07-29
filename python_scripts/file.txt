@@ -1,0 +1,2 @@
+I am the new content after removing all
+I am the appended content
