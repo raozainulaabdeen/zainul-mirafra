@@ -15,17 +15,16 @@ void p_ll(node_t *ptr);
 
 
 void a_ll(int val){
+	temp = (node_t *)malloc(sizeof(node_t));
+	temp->val = val;
+	temp->next = NULL;
+
 	if(head == NULL){
-		head = (node_t *)malloc(sizeof(node_t));
-		head->val = val;
-		head->next = NULL;
+		head = temp;
 		tail = head;
 	}
 
 	else{
-		temp = (node_t *)malloc(sizeof(node_t));
-		temp->val = val;
-		temp->next = NULL;
 		tail->next = temp;
 		tail = temp;
 	}
@@ -45,6 +44,6 @@ int main(){
 	a_ll(4);
 	a_ll(5);
 	p_ll(head);
+
 	return 0;
-	
 }
