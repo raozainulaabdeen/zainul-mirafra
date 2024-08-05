@@ -1,0 +1,15 @@
+diff --git a/c/a.out b/c/a.out
+index 4ad1549..658861c 100755
+Binary files a/c/a.out and b/c/a.out differ
+diff --git a/c/selection_sort.c b/c/selection_sort.c
+index f4d2579..21c2cb3 100644
+--- a/c/selection_sort.c
++++ b/c/selection_sort.c
+@@ -22,6 +22,7 @@ void selec_sort(int *a, int n){
+ int main(){
+ 	int a[5] = {2, 5, 3, 4, 1};
+ 	selec_sort(&a[0], 5);
++	printf("sorted array: ");
+ 	for(int i = 0; i < 5; i++){
+ 		printf("%d ", a[i]);
+ 	}
